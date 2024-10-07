@@ -1,0 +1,583 @@
+/*-------------------- FONTS --------------------*/
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 200;
+}
+
+.playpen-sans {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+}
+
+/*-------------------- * --------------------*/
+
+* {
+    box-sizing: border-box;
+}
+  
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-------------------- BODY ANIMATION --------------------*/
+
+body {
+    background: linear-gradient(-45deg, #F1E5D1, #C39898, #d8abad, #c4888d);
+	background-size: 400% 900%;
+	animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*-------------------- CONTAINER --------------------*/
+
+.container {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/*-------------------- NAVBAR --------------------*/
+
+.naav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    z-index: 10;
+}
+
+.naav::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    background-color: black;
+    height: 2.5px;
+    bottom: 0;
+}
+
+
+.logo {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.social-icons img {
+    padding: 0 10px;
+}
+
+
+/*-------------------- SHOWCASE --------------------*/
+
+/*--- right ---*/
+header {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+header .right {
+    z-index: -1
+}
+
+header .right img {
+    padding-top: 10px;
+    height: 88cap;
+}
+
+/*--- left ---*/
+
+.left h2 {
+    font-size: 6rem;
+    letter-spacing: 5px;
+}
+
+.left p {
+    margin: auto auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.shop-btn {
+    margin-top: 200px;
+    padding: 15px 35px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.shop-btn:hover {
+    background-color: #D2A5A0;
+    opacity: 100%;
+}
+
+/*-------------------- ABOUT --------------------*/
+
+.about-me {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me img {
+    height: 70cap;
+    border-radius: 5%;
+}
+
+.bio-title {
+    font-size: 3rem;
+    padding-bottom: 23%;
+    text-align: center;
+}
+
+.bio-des {
+    font-size: 1.22rem;
+}
+
+.about-me .right {
+    margin-right: 8%;
+    width: 25%;
+    line-height: 30px;
+}
+
+/*-------------------- IMAGE TRANSITION --------------------*/
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.prod-img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: auto;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.img-container:hover .hover-img {
+    opacity: 1;
+    filter: brightness(70%);
+}
+
+.img-container:hover .prod-img:not(.hover-img) {
+    opacity: 0;
+}
+
+.fix1-img {
+    object-fit: scale-down;
+    object-position: 0px -50px;
+}
+
+.fix2-img {
+    object-fit: scale-down;
+    object-position: 0px -90px;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    filter: brightness(150%);
+    position: absolute;
+    top: 45%;
+    left: 36.5%;
+    opacity: 0;
+    transition: 0.3 ease;
+}
+
+.img-container:hover .buy-btn {
+    opacity: 1;
+}
+
+.buy-btn:hover:before {
+    position: absolute;
+    left: 10px;
+    width: 80%;
+    content: "";
+    background-color: white;
+    height: 1.5px;
+    bottom: 0;
+}
+
+/*-------------------- PRODUCTS --------------------*/
+
+.products {
+    width: 100%;
+}
+
+.prod-title-head {
+    font-size: 3rem;
+    margin: 30px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.shelf1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prod1 {
+    border: 5px solid #D9B8C4;
+    background-color: #D9B8C4;
+    border-radius: 5%;
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 5%;
+    
+}
+
+.prod2 {
+    border: 5px solid #D9B8C4;
+    background-color: #D9B8C4;
+    border-radius: 5%;
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 5%;
+}
+
+.prod3 {
+    border: 5px solid #D9B8C4;
+    background-color: #D9B8C4;
+    border-radius: 5%;
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 5%;
+}
+
+.prod1:hover, .prod2:hover, .prod3:hover, .prod4:hover {
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.35);
+    transform: translateY(-1px)
+}
+
+.prod4 {
+    border: 5px solid #D9B8C4;
+    background-color: #D9B8C4;
+    border-radius: 5%;
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 5%; 
+}
+
+.prod-title {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.prod-des {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 25px;
+    margin: 10px 50px;
+    margin-top: 10px;
+}
+
+
+/*-------------------- WHY US --------------------*/
+
+.why-us {
+    height: 60vh;
+}
+
+.why-title-head {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-title {
+    font-size: 1.4rem;
+}
+
+.title-mt {
+    margin-top: 15%;
+}
+
+.three-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reas1, .reas2, .reas3 {
+    text-align: center;
+}
+
+.why-icon {
+    height: 15cap;
+}
+
+.why-des {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 25px;
+    margin: 10px 70px;
+    margin-top: 10px;
+}
+
+
+/*-------------------- LASTEST SONG --------------------*/
+
+.ls-title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container-mp input[type=radio] {
+    display: none;
+}
+  
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+  
+.container-mp {
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+  
+.cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+  
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+}
+  
+.player {
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 380px;
+    padding: 16px 10px;
+}
+  
+.upper-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    height: 40px;
+    overflow: hidden;
+}
+  
+.song-info {
+    width: calc(100% - 32px);
+    display: block;
+}
+  
+.song-info .title {
+    color: #403d40;
+    font-size: 14px;
+    line-height: 24px;
+}
+  
+.sub-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.subtitle, .time {
+    font-size: 12px;
+    line-height: 16px;
+    color: #c6c5c6;
+}
+  
+  
+.info-area {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transition: transform .4s ease-in;
+}
+  
+#item-2:checked ~ .player #test {
+    transform: translateY(0);
+}
+  
+#item-2:checked ~ .player #test  {
+    transform: translateY(-40px);
+}
+  
+#item-3:checked ~ .player #test  {
+    transform: translateY(-80px);
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 6px;
+    background: #c4888d;
+    border-radius: 4%;
+    cursor: pointer;
+    margin: 10px 15%;
+}
+  
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #c4888d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6.5px solid #ffffff;
+    box-shadow: 0 5px 10pX rgba(107, 41, 109, 0.22);
+}
+  
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+.controls div {
+    margin: 100px;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #c4888d;
+    cursor: pointer;
+}
+
+.controls div i {
+    transform: scale(1.4);
+}
+
+
+/*-------------------- FOOTER --------------------*/
+
+footer {
+    background-color: #000;
+    height: 250px;
+    width: 100vw;
+}
+
+footer svg {
+    height: 35px;
+    fill: #fff;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 80px;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.links a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.links a:hover:before {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    content: "";
+    background-color: white;
+    height: 1.5px;
+    bottom: 0;
+}
+
+footer p {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}

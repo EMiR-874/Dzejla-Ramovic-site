@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzejla Makeup</title>
+
+<!----------- FONTS -------->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+<!----------- FONTS -------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/00106cbec8.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!--------------------------- NAVBAR ------------------------>
+    <div class="container">
+        <nav class="naav"  id="home">
+            <div class="logo">
+                <h2 class="abril-fatface-regular">Džejla Ramović</h2>
+            </div>
+            <div class="comp-name">
+                <h2 class="abril-fatface-regular">Maybelline</h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/dzejlaramovic/">
+                    <img src="./images/icons/instagram-icon.svg" alt="Icon of Instagram logo" height="30px">
+                </a>
+                <a href="https://www.tiktok.com/@dzejlar">
+                    <img src="./images/icons/tiktok-icon.svg" alt="Icon of TikTok logo" height="30px">
+                </a>
+                <a href="https://www.youtube.com/@DzejlaRamovicOfficial/featured">
+                    <img src="./images/icons/youtube-icon.svg" alt="Icon of YouTube logo" height="30px">
+                </a>
+                <a href="https://www.maybelline.com/">
+                    <img src="./images/icons/maybelline-icon.png" alt="Icon of Maybelline logo" height="30px">
+                </a>
+            </div>
+        </nav>
+    </div>
+
+ <!--------------------------- SHOWCASE ------------------------>
+
+    <div class="container">
+        <header>
+            <div class="left">
+                <h2 class="abril-fatface-regular">Just look at me</h2>
+                <p class="playpen-sans"> My number 1 is Maybelline New York, with which every makeup looks special. </p>
+                <div class="btn">
+                    <button onclick="scrollToSection('products')" class="shop-btn" >
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./images/Dzejla Photos/header-photo.png" alt="Photo of Džejla Ramović">
+            </div>
+        </header>
+    </div>
+
+    <!--------------------------- ABOUT ME (smanjit slikuu, uredit text) ------------------------>
+
+    <div class="container">
+        <div class="about-me" id="about-me">
+            <div class="left">
+                <img src="./images/Dzejla Photos/aboutme-photo.jpeg" class="about-photo" alt="Photo of Džejla Ramović">
+            </div>
+            <div class="right">
+                <h2 class="abril-fatface-regular bio-title">BIOGRAPHY</h2>
+                <p class="playpen-sans bio-des">I was born on April 29, 2002 in the small town of Goražde, Bosnia and Herzegovina. I started my music career when I was only 4 years old, 
+                    appearing at a local music competition. After a few years, I applied to the regional music competition for young people "Neki Novi Klinci" and won the first season. 
+                    Then I participated in the biggest music competition in the Balkans "Zvezde Granda" and won in the first appearance. 
+                    I currently have 8 recorded songs with over 100 million listens. I started my collaboration with Maybelline in 2023 and since then I have enjoyed every moment together.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------- PRODUCTS (dodati slike i urediti text (koristit grid)) ------------------------>
+
+    <div class="container">
+        <div class="products" id="products">
+            <div class="title">
+                <h2 class="abril-fatface-regular prod-title-head"> PRODUCTS</h2>
+            </div>
+            <div class="shelf1">
+                <div class="prod1">
+                    <div class="img-container">
+                        <img src="./images/Dzejla Photos/product-1.png" class="prod-img prod1-img fnd-img" height="400cap" alt="image of ANTHELIOS UVMUNE 400 prodct">
+                        <img src="./images/Dzejla Photos/Dzejla-Product-1.jpg" class="prod-img hover-img fix1-img" height="400cap" alt="Džejla Ramović holding a ANTHELIOS UVMUNE 400 prodct">
+                        <a href="https://www.laroche-posay.com.hr/products/anthelios/anthelios-uvmune-400-invisible-fluid-spf50-without-perfume"><button class="buy-btn"> BUY NOW</button></a> 
+                    </div>
+                    <h5 class="p1t abril-fatface-regular prod-title">ANTHELIOS UVMUNE 400</h5>
+                    <p class="p1d playpen-sans prod-des">It protects the skin from a very wide spectrum of UVA and UVB radiation and prevents damage caused by infrared-A radiation and pollution.</p>
+                </div>
+
+                <div class="prod2">
+                    <div class="img-container">
+                        <img src="./images/Dzejla Photos/product-2.png" class="prod-img prod2-img" height="400cap" alt="image of ANTHELIOS MLIJEKO ZA ZAŠTITU OD SUNCA">
+                        <img src="./images/Dzejla Photos/Dzejla-Product-2.jpg" class="prod-img hover-img fix2-img" alt="Džejla Ramović holding a ANTHELIOS MLIJEKO ZA ZAŠTITU OD SUNCA">
+                        <a href="https://www.laroche-posay.sg/anthelios/anthelios-body-milk-spf50plus"><button class="buy-btn"> BUY NOW</button></a> 
+                    </div>
+                    <h5 class="p2t abril-fatface-regular prod-title">ANTHELIOS SUN PROTECTION MILK</h5>
+                    <p class="p2d playpen-sans prod-des">It helps prevent oxidative stress caused by pollution. The first very high protection against UVA radiation, more environmentally friendly.</p>
+                </div>
+
+                <div class="prod3">
+                    <div class="img-container">
+                        <img src="./images/Dzejla Photos/product-3.png" class="prod-img prod3-img" height="400cap" alt="image of LONGWEAR LIQUID LIPCOLOR">
+                        <img src="./images/Dzejla Photos/Dzejla-Product-3.jpg" class="prod-img hover-img" alt="Džejla Ramović holding a ALONGWEAR LIQUID LIPCOLOR">
+                        <a href="https://www.maybelline.com/lip-makeup/lipstick/super-stay-vinyl-ink-longwear-liquid-lipstick?variant=Punchy"><button class="buy-btn"> BUY NOW</button></a>    
+                    </div>
+                    <h5 class="p3t abril-fatface-regular prod-title">LONGWEAR LIQUID LIPCOLOR</h5>
+                    <p class="p3d playpen-sans prod-des">This longwear lipstick's Color Lock formula defies smudging and provides an instant shine finish. Shake before applying on clean dry lips.</p>
+                </div>
+
+                <div class="prod4">
+                    <div class="img-container">
+                        <img src="./images/Dzejla Photos/product-4.png" class="prod-img prod3-img" height="400cap" alt="image of WATERPROOF MASCARA">
+                        <img src="./images/Dzejla Photos/Dzejla-Product-4v2.jpeg" class="prod-img hover-img" alt="Džejla Ramović holding a WATERPROOF MASCARA">
+                        <a href="https://www.maybelline.com/eye-makeup/mascara/lash-sensational-sky-high-waterproof-mascara-makeup?variant=Very+Black"><button class="buy-btn"> BUY NOW</button></a> 
+                    </div> 
+                    <h5 class="p3t abril-fatface-regular prod-title">WATERPROOF MASCARA</h5>
+                    <p class="p3d playpen-sans prod-des">Lengthening and volumizing mascara for Sky High lash impact from every angle. Long lasting mascara delivers limitless length and full volume.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------- WHY US ------------------------>
+    <div class="container">
+        <div class="why-us">
+            <div class="why-title">
+                <h2 class="abril-fatface-regular why-title-head"> WHY US</h2>
+            </div>
+
+            <div class="three-icons">
+                <div class="reas1">
+                    <img src="./images/icons/clock-history.svg" class="why-icon" alt="Icon of clock">
+                    <h3 class="abril-fatface-regular why-title title-mt">Quick Apply</h3>
+                    <p class="playpen-sans why-des">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illum rem tenetur nobis, adipisci, 
+                        cumque id dolorum vero dicta laboriosam sapiente dolor labore perspiciatis porro eius optio, modi eum! Molestiae.
+                    </p>
+                </div>
+                <div class="reas2">
+                    <img src="./images/icons/star.svg" class="why-icon" alt="Icon of Star">
+                    <h3 class="abril-fatface-regular why-title title-mt">Quality</h3>
+                    <p class="playpen-sans why-des">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illum rem tenetur nobis, adipisci, 
+                        cumque id dolorum vero dicta laboriosam sapiente dolor labore perspiciatis porro eius optio, modi eum! Molestiae.
+                    </p>
+                </div>
+                <div class="reas3">
+                    <img src="./images/icons/check2-circle.svg" class="why-icon" alt="Icon of checkmark">
+                    <h3 class="abril-fatface-regular why-title title-mt">Easy to use</h3>
+                    <p class="playpen-sans why-des">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illum rem tenetur nobis, adipisci, 
+                        cumque id dolorum vero dicta laboriosam sapiente dolor labore perspiciatis porro eius optio, modi eum! Molestiae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------- LASTEST SONG ------------------------>
+
+    <div class="container-mp container" >
+        <h2 class="abril-fatface-regular ls-title" id="songs-scrl">Want to listen to some of my songs?</h2>
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1" onclick="changeSong('song1')">
+                <img src="./images/Dzejla Photos/d1.jfif" alt="Cover photo of Dzejla Ramovic's song called Rizik">
+            </label>
+            <label class="card" for="item-2" id="song-2" onclick="changeSong('song2')">
+                <img src="./images/Dzejla Photos/d2.jfif" alt="Cover photo of Dzejla Ramovic's song called Tajna Veza">
+            </label>
+            <label class="card" for="item-3" id="song-3" onclick="changeSong('song3')">
+                <img src="./images/Dzejla Photos/d3.jfif" alt="Cover photo of Dzejla Ramovic's song called Kazamat">
+            </label>
+        </div>
+        <div class="player">
+            <div class="upper-part">
+                <div class="play-icon controls">
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                </div>
+                <audio id="song">
+                    <source src="./music/Dzejla Ramovic - Rizik.mp3" type="audio/mpeg">
+                </audio>
+                <div class="info-area">
+                    <label class="song-info" id="song-info-1">
+                        <div class="title">Rizik</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Džejla Ramović ft. Henny</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                        <div class="title">Tajna Veza</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Džejla Ramović ft. Henny</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                        <div class="title">Kazamat</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Dzejla Ramovic</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <input type="range" value="0" id="progress">
+        </div>
+        
+    </div>
+
+    <!--------------------------- FOOTER ------------------------>
+<br><br><br><br>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/dzejlaramovic/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 
+                        74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 
+                        27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 
+                        1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 
+                        388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 
+                        22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@dzejlar">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 
+                        381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@DzejlaRamovicOfficial/featured">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 
+                        132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 
+                        213.5V175.2l142.7 81.2-142.7 81.2z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 
+                        6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+                    </svg>
+                </a>
+                <a href="mailto:test@example.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 
+                        64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about-me">About me</a>
+                <a href="#products">Products</a>
+                <a href="#songs-scrl">Songs</a>
+            </div>
+
+            <p>Copyright © Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </footer>
+
+<!--------------------------------------------------->
+
+    <!--------------------------- SCRIPTS ------------------------>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <!--------------------------- AUDIO PLAYER SCRIPTS ------------------------>
+    
+ <script>
+        let progress = document.getElementById("progress");
+        let song = document.getElementById("song");
+        let ctrlIcon = document.getElementById("ctrlIcon");
+
+        song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+        };
+
+    function playPause() {
+        if (ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+        } else {
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    setInterval(() => {
+        if (!song.paused) {
+            progress.value = song.currentTime;
+        }
+    }, 500);
+
+    progress.onchange = function() {
+        song.currentTime = progress.value;
+        song.play();
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+    };
+
+    function changeSong(songId) {
+        let newSource;
+        let newInfo;
+
+        switch (songId) {
+            case 'song1':
+                newSource = "./music/Dzejla Ramovic - Rizik.mp3";
+                newInfo = document.getElementById('song-info-1');
+                break;
+            case 'song2':
+                newSource = "./music/Dzejla Ramovic - Tajna Veza.mp3"; 
+                newInfo = document.getElementById('song-info-2');
+                break;
+            case 'song3':
+                newSource = "./music/Dzejla Ramovic - Kazamat.mp3"; 
+                newInfo = document.getElementById('song-info-3');
+                break;
+    }
+
+    song.src = newSource;
+    song.load();
+    song.currentTime = 0;
+
+    document.querySelectorAll('.song-info').forEach(info => info.style.display = 'none');
+    newInfo.style.display = 'block';
+
+    ctrlIcon.classList.remove("fa-pause");
+    ctrlIcon.classList.add("fa-play");
+    }
+    </script>
+</body>
+</html>

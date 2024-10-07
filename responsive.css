@@ -1,0 +1,119 @@
+/*-------------------- 1670 --------------------*/
+
+@media (max-width:1670px) {
+
+    header .right img {
+        height: 75cap;
+    }
+
+    .left h2 {
+        font-size: 5rem;
+    }
+
+    .left p {
+        font-size: 1.8rem;
+    }
+    
+    .container-mp {
+        position: relative;
+        top: 10%;
+    }
+
+    footer  {
+        position: relative;
+        top: 10%;
+    }
+
+    body {
+        background: linear-gradient(-45deg, #F1E5D1, #C39898, #d8abad, #c4888d);
+        background-size: 400% 1100%;
+        animation: gradient 15s ease infinite;
+        overflow-x: hidden;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+/*-------------------- 1395 --------------------*/
+
+@media (max-width:1395px) {
+    .shop-btn {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:1200px) {
+    .shop-btn {
+        margin-top: 100px;
+    }
+
+    .container-mp {
+        position: relative;
+        top: 15%;
+    }
+
+    footer  {
+        position: relative;
+        top: 15%;
+    }
+}
+
+/*-------------------- 1127 --------------------*/
+
+@media (max-width:1127px) {
+
+    .shop-btn {
+        margin-top: 100px;
+    }
+
+    .container-mp {
+        position: relative;
+        top: 15%;
+    }
+
+    footer  {
+        position: relative;
+        top: 15%;
+    }
+}
+
+/*-------------------- 1024 --------------------*/
+
+@media (max-width:1024px) {
+
+    header .right img {
+        height: 70cap;
+    }
+
+    .left h2 {
+        font-size: 5rem;
+    }
+
+    .left p {
+        font-size: 1.5rem;
+    }
+
+    .shop-btn {
+        margin-top: 50px;
+    }
+
+    .container-mp {
+        position: relative;
+        top: 15%;
+    }
+
+    footer  {
+        position: relative;
+        top: 15%;
+    }
+}
